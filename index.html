@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/664da22f71.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="display-4">
+        Geraldine's
+        <small class="text-muted">SheCodes Weather App</small>
+      </h1>
+      <hr />
+      <div class="card" style="width: 35rem;">
+        <div class="card-header headstyle">
+          <div class="row">
+            <div class="col-7">
+              <p class="card-text cities">
+                Lisbon | Paris | Sydney | San Francisco
+              </p>
+            </div>
+            <div class="col-5">
+              <form class="input-group input-group-sm mb-3" id="search-form">
+                <div class="input-group-prepend">
+                  <button
+                    class="btn btn-outline-secondary"
+                    id="current-location-button"
+                  >
+                    <i class="fas fa-map-marker-alt"></i>
+                  </button>
+                  <input
+                    type="submit"
+                    value="🔍"
+                    class="btn btn-outline-secondary"
+                  />
+                </div>
+                <input
+                  type="search"
+                  placeholder="Type a city.."
+                  autofocus="on"
+                  autocomplete="off"
+                  id="city-input"
+                  class="form-control shadow-sm"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="card-body base">
+          <div class="weather-app">
+            <h6 class="card-subtitle mb-2 text-muted location">
+              It's a <span id="description"></span> <span id="date"></span>,
+              <span id="city"></span>...
+            </h6>
+            <h5 class="card-title degrees">
+              <i class="fas fa-cloud-sun"></i>
+              <span
+                class="card-title degrees temperature"
+                id="temperature"
+              ></span
+              ><span class="units"><small class="text-muted">°C</small></span>
+            </h5>
+            <h6 class="card-subtitle mb-2 text-muted stats">
+              With a humidity of <span id="humidity"></span>% and wind speed of
+              <span id="wind"></span> km/h
+            </h6>
+            <div class="container days">
+              <div class="row row-cols-5">
+                <div class="col">Tue</div>
+                <div class="col">Wed</div>
+                <div class="col">Thurs</div>
+                <div class="col">Fri</div>
+                <div class="col">Sat</div>
+                <div class="col"><i class="far fa-sun"></i></div>
+                <div class="col"><i class="fas fa-cloud-sun"></i></div>
+                <div class="col"><i class="far fa-sun"></i></div>
+                <div class="col"><i class="fas fa-cloud-sun"></i></div>
+                <div class="col"><i class="far fa-sun"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>

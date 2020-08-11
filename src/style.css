@@ -1,0 +1,56 @@
+.base {
+  background-image: linear-gradient(to top, #dad4ec 0%, #f3e7e9 100%);
+}
+
+.headstyle {
+  padding-top: 20px;
+}
+
+.cities {
+  font-family: "Cedarville Cursive", cursive;
+  margin-top: 10px;
+}
+
+#description {
+  text-transform: lowercase;
+}
+
+.location {
+  font-size: 25px;
+  text-align: center;
+  font-family: "Cedarville Cursive", cursive;
+  margin-top: 20px;
+}
+
+.stats {
+  font-size: 25px;
+  text-align: center;
+  font-family: "Cedarville Cursive", cursive;
+}
+
+.time {
+  text-align: center;
+}
+
+.stats {
+  text-align: center;
+}
+
+.degrees {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.conversion {
+  text-decoration: none;
+  color: #6c757d;
+}
+
+.days {
+  text-align: center;
+  font-family: "Cedarville Cursive", cursive;
+  margin-left: 10px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
