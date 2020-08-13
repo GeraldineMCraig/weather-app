@@ -46,3 +46,14 @@
   margin-top: 30px;
   margin-bottom: 15px;
 }
+
+.degrees .active {
+  color: #6c757d;
+  cursor: default;
+}
+
+.degrees .active:hover {
+  color: #6c757d;
+  cursor: default;
+  text-decoration: none;
+}

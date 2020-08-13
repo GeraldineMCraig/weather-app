@@ -67,20 +67,25 @@
         <div class="card-body base">
           <div class="weather-app">
             <h6 class="card-subtitle mb-2 text-muted location">
-              It's a <span id="description"></span> <span id="date"></span>,
-              <span id="city"></span>...
+              Looks like <span id="description"></span> this
+              <span id="date"></span>, <span id="city"></span>...
             </h6>
             <h5 class="card-title degrees">
-              <img
-                src="http://openweathermap.org/img/wn/02n@2x.png"
-                id="image"
-              />
+              <img src="" alt="clear" id="image" />
               <span id="temperature"></span>
               <span
                 class="card-title degrees temperature"
                 id="temperature"
               ></span
-              ><span class="units"><small class="text-muted">°C</small></span>
+              ><span class="units"
+                ><small class="text-muted"
+                  ><a href="#" id="celsius-link" class="active">°C</a> |<a
+                    href="#"
+                    id="fahrenheit-link"
+                    >°F</a
+                  ></small
+                ></span
+              >
             </h5>
             <h6 class="card-subtitle mb-2 text-muted stats">
               With a humidity of <span id="humidity"></span>% and wind speed of
