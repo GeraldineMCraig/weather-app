@@ -29,7 +29,7 @@
         <small class="text-muted">SheCodes Weather App</small>
       </h1>
       <hr />
-      <div class="card" style="width: 35rem;">
+      <div class="card border-secondary mb-3" style="width: 35rem;">
         <div class="card-header headstyle">
           <div class="row">
             <div class="col-7">
@@ -41,6 +41,7 @@
               <form class="input-group input-group-sm mb-3" id="search-form">
                 <div class="input-group-prepend">
                   <button
+                    type="button"
                     class="btn btn-outline-secondary"
                     id="current-location-button"
                   >
@@ -68,11 +69,14 @@
           <div class="weather-app">
             <h6 class="card-subtitle mb-2 text-muted location">
               Looks like <span id="description"></span> this
-              <span id="date"></span>, <span id="city"></span>...
+              <span id="date"></span>, <span id="city"></span>...<i
+                class="fas fa-pen-fancy"
+              ></i>
             </h6>
             <h5 class="card-title degrees">
-              <img src="" alt="clear" id="image" />
-              <span id="temperature"></span>
+              <img src="" alt="clear" id="image" /><span
+                id="temperature"
+              ></span>
               <span
                 class="card-title degrees temperature"
                 id="temperature"
@@ -88,32 +92,22 @@
               >
             </h5>
             <p class="card-text stats">
-              With a humidity of <span id="humidity"></span>% and wind speed of
+              With <span id="humidity"></span>% humidity and wind speed of
               <span id="wind"></span> km/h
             </p>
-            <div class="container days">
-              <div class="row row-cols-5">
-                <div class="col">Tue</div>
-                <div class="col">Wed</div>
-                <div class="col">Thurs</div>
-                <div class="col">Fri</div>
-                <div class="col">Sat</div>
-                <div class="col"><i class="far fa-sun"></i></div>
-                <div class="col"><i class="fas fa-cloud-sun"></i></div>
-                <div class="col"><i class="far fa-sun"></i></div>
-                <div class="col"><i class="fas fa-cloud-sun"></i></div>
-                <div class="col"><i class="far fa-sun"></i></div>
-              </div>
-            </div>
           </div>
+          <div class="row weather-forecast" id="forecast"></div>
+        </div>
+
+        <div class="card-footer text-muted">
+          <small>
+            <a href="https://github.com/KissaSpirit/weather-app" target="_blank"
+              >Open-source code</a
+            >
+            by SheCodes & Geraldine Craig
+          </small>
         </div>
       </div>
-      <small>
-        <a href="https://github.com/KissaSpirit/weather-app" target="_blank"
-          >Open-source code</a
-        >
-        by SheCodes & Geraldine Craig
-      </small>
     </div>
     <script src="src/app.js"></script>
   </body>

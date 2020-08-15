@@ -19,17 +19,17 @@
   font-size: 25px;
   text-align: center;
   font-family: "Cedarville Cursive", cursive;
-  margin-top: 20px;
-}
-
-.stats {
-  text-align: center;
-  font-family: "Cedarville Cursive", cursive;
+  margin-top: 15px;
 }
 
 .degrees {
   font-size: 50px;
   text-align: center;
+}
+
+.stats {
+  text-align: center;
+  font-family: "Cedarville Cursive", cursive;
 }
 
 .conversion {
@@ -40,8 +40,6 @@
 .days {
   text-align: center;
   font-family: "Cedarville Cursive", cursive;
-  color: #6c757d;
-  font-size: 25px;
   margin-left: 10px;
   margin-top: 30px;
   margin-bottom: 15px;
@@ -56,4 +54,31 @@
   color: #6c757d;
   cursor: default;
   text-decoration: none;
+}
+
+.weather-forecast {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.weather-forecast h3 {
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 14px;
+  text-align: center;
+  height: 15px;
+  line-height: 15px;
+  padding-top: 7px;
+}
+
+.weather-forecast img {
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  width: 48px;
+}
+
+.weather-forecast-temperature {
+  text-align: center;
+  height: auto;
+  line-height: 15px;
 }
